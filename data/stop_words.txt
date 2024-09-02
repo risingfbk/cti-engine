@@ -1,0 +1,8 @@
+attack
+adversaries
+techniques
+threat
+alert
+dec
+apr
+john

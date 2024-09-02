@@ -1,0 +1,38 @@
+[package]
+name = "cti_engine"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "cti_engine"
+path = "src/main.rs"
+
+
+[features]
+latest = ["dep:reqwest"]
+
+[dependencies]
+attck = "0.3.0"
+stix = "0.3.0"
+clap = { version = "4.5.4", features = ["derive"] }
+dotenv = "0.15.0"
+rocket = { version = "0.5.0", features = ["json"] }
+serde = { version = "1.0.198", features = ["derive"] }
+serde_json = "1.0.116"
+tokio = { version = "1.37.0", features = ["full"] }
+mongodb = {version = "2.8.2", features = ["tokio-runtime"]}
+chrono = "0.4.38"
+stop-words = "0.8.0"
+keyword_extraction = { version = "1.4.3", features = ["yake"] }
+yansi = "1.0.1"
+indicatif = "0.17.8"
+async-trait = "0.1.80"
+reqwest = {version = "0.12.4", optional = true}
+serde_yaml = "0.9.34"
+strum = { version = "0.26.2", features = ["derive", "strum_macros"] }
+
+cveparser = { git = "https://github.com/Degra02/cveparser.git" }
+terraform_parser = { git = "https://github.com/Degra02/terraform_parser.git" }
+syn = "2.0.72"
+quote = "1.0.36"
+

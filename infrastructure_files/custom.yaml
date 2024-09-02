@@ -1,0 +1,13 @@
+countries:
+- Italy
+- France
+sectors:
+- Public Administration
+- Finance
+operating_systems:
+- Windows
+software:
+- Office
+- Visual Studio
+- Azure
+- AWS
